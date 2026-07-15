@@ -1,0 +1,1 @@
+        int bestAns = nums[0];        int ans = nums[0];        for(int i = 1; i < n; i++){            int value1 = bestAns + nums[i];            int value2 = nums[i];            bestAns = max(value1, value2);            ans = max(bestAns, ans);        }        return ans;    }};
